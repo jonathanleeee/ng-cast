@@ -2,13 +2,10 @@ angular.module('video-player')
 .component('videoList', {
   bindings: {
     videos: '<',
-    cb: '<'
+    hanldeVideoListEntryClick: '<'
   },
   templateUrl:`src/templates/videoList.html`,
   controller: function() {
-    console.log(this);
-    this.onClick = () => {
 
-    };
   }
 });
