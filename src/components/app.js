@@ -8,8 +8,10 @@ angular.module('video-player')
     this.searchResults = function() {
 
     };
-    this.hanldeVideoListEntryClick = function(index) {
+    this.hanldeVideoListEntryClick = (index) => {
       console.log('event handler invoked');
+      console.log(index);
+      this.currentVideo = exampleVideoData[index];
     },
 
     this.currentVideo = exampleVideoData[0];

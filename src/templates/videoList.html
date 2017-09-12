@@ -1,3 +1,8 @@
 <ul class="video-list">
-  <video-list-entry video="video" hanlde-video-list-entry-click="$ctrl.hanldeVideoListEntryClick" ng-repeat="video in $ctrl.videos"><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
+  <video-list-entry
+    video="video"
+    hanlde-video-list-entry-click="$ctrl.hanldeVideoListEntryClick"
+    index="$index"
+    ng-repeat="video in $ctrl.videos track by $index"
+  ><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
 </ul>
